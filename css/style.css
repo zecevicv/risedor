@@ -696,6 +696,7 @@ h6 {
   position: absolute;
   top: 0.8vw;
   left: 0.8vw;
+  cursor: pointer;
 }
 
 .dropdown-close svg {
