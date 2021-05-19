@@ -11,6 +11,7 @@
   <!-- Style (Vendor) -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/image-compare-viewer.min.css">
+  <link rel="stylesheet" href="css/aos.css">
 
   <!-- Style -->
   <link rel="stylesheet" href="css/style.css">
@@ -140,7 +141,7 @@
   </header>
 
   <!-- Hero -->
-  <div class="hero">
+  <div class="hero" id="hero">
     <!-- Swiper -->
     <div class="swiper-container">
       <div class="swiper-wrapper">
@@ -170,9 +171,9 @@
     </div>
     <!-- Text -->
     <div class="text">
-      <h1 class="regular">איכות החיים שלכם מתקדמת
+      <h1 class="regular" data-aos="fade-up" data-aos-anchor="#hero" data-aos-delay="400">איכות החיים שלכם מתקדמת
         <br>!לגבהים חדשים</h1>
-      <p class="f-d-7 f-m-7 light">פרויקט פינוי בינוי שכונות המעפילים - השבעה</p>
+      <p class="f-d-7 f-m-7 light" data-aos="fade-up" data-aos-anchor="#hero" data-aos-delay="600">פרויקט פינוי בינוי שכונות המעפילים - השבעה</p>
     </div>
     <!-- Boxes -->
     <div class="boxes">
@@ -207,7 +208,7 @@
   </div>
 
   <!-- Map -->
-  <div class="map">
+  <div class="map" id="map">
     <div class="container">
       <!-- Heading -->
       <div class="heading">
@@ -217,7 +218,7 @@
             <line data-name="Line 38" y1="198" transform="translate(960 897)" fill="none" stroke="#f36a10" stroke-width="1"/>
           </g>
         </svg>
-        <p class="f-d-4 f-m-4 light">?מהו פינוי בינוי</p>
+        <p class="f-d-4 f-m-4 light" data-aos="fade-up" data-aos-anchor="#map">?מהו פינוי בינוי</p>
         <h2 class="f-d-8 f-m-6 regular text-blue">פינוי בינוי כהזדמנות שלא תחזור</h2>
         <p class="f-m f-d-3 f-m-2">,הזדמנות נדירה להפוך את הדירה הישנה שלכם לבית חדש ומפואר
           ,גדול יותר, מפנק יותר, איכותי יותר - בשכונה שאתם אוהבים 
@@ -226,7 +227,7 @@
       <!-- Row -->
       <div class="row">
         <!-- Info 1 -->
-        <div class="info info-1">
+        <div class="info info-1" data-aos="fade-left" data-aos-anchor="#map">
           <p class="f-d-4 f-m-4 light">השכונה כיום</p>
           <p class="f-m f-d-3 f-m-1 bold">מצב קיים</p>
           <p class="f-m f-d-3 f-m-1">'שטח קו כחול 33.6 ד</p>
@@ -243,7 +244,7 @@
           <img src="img/map-1.jpg" alt="map-img">
         </div>
         <!-- Info 2 -->
-        <div class="info info-2">
+        <div class="info info-2" data-aos="fade-right" data-aos-anchor="#map">
           <p class="f-d-4 f-m-4 light">השכונה בעתיד</p>
           <p class="f-m f-d-3 f-m-1 bold">מצב מוצע</p>
           <p class="f-m f-d-3 f-m-1">מתחם צפוני</p>
@@ -310,11 +311,11 @@
   </div>
 
   <!-- Stages -->
-  <div class="stages">
+  <div class="stages" id="stages">
     <div class="container">
       <!-- Heading -->
       <div class="heading">
-        <p class="f-d-4 f-m-4 light">הצגת התהליך</p>
+        <p class="f-d-4 f-m-4 light" data-aos="fade-up" data-aos-anchor="#stages">הצגת התהליך</p>
         <h2 class="f-d-8 f-m-6 regular">שלבי הפרויקט</h2>
       </div>
       <!-- Stages -->
@@ -2672,7 +2673,7 @@
   </div>
 
   <!-- Benefits -->
-  <div class="benefits">
+  <div class="benefits" id="benefits">
     <div class="container">
       <!-- Heading -->
       <div class="heading">
@@ -2684,7 +2685,7 @@
               stroke-width="1" />
           </g>
         </svg>
-        <p class="f-d-4 f-m-4 light">יתרונות הפרויקט</p>
+        <p class="f-d-4 f-m-4 light" data-aos="fade-up" data-aos-anchor="#benefits">יתרונות הפרויקט</p>
         <h2 class="f-d-8 f-m-6 regular text-blue">התמורה שאתם עתידים לקבל מהיזם בפרויקט</h2>
       </div>
       <ul>
@@ -2847,9 +2848,9 @@
   </div>
 
   <!-- Technical Information -->
-  <div class="technical-information">
+  <div class="technical-information" id="technicalInformation">
     <div class="container">
-      <p class="f-d-4 f-m-4 light">מידע טכני</p>
+      <p class="f-d-4 f-m-4 light" data-aos="fade-up" data-aos-anchor="#technicalInformation">מידע טכני</p>
       <h2 class="f-d-8 f-m-6 regular text-blue">מתקדמים באיכות החיים עד הפרטים הקטנים</h2>
       <!-- Accordion -->
       <div class="accordion">
@@ -3337,7 +3338,7 @@
   </div>
 
   <!-- Information -->
-  <div class="information">
+  <div class="information" id="information">
     <div class="container">
       <!-- Heading -->
       <div class="heading">
@@ -3351,7 +3352,7 @@
       <div class="row">
         <!-- Col -->
         <div class="col">
-          <p class="f-m f-d-3 f-m-2 bold"> לפי חוק מכר דירות, בעלי הדירות מקבלים
+          <p class="f-m f-d-3 f-m-2 bold" data-aos="fade-up" data-aos-anchor="#information"> לפי חוק מכר דירות, בעלי הדירות מקבלים
             את הביטחונות הנדרשים מקבלן לרבות
             ערבות חוק מכר בשווי הדירה העתידית שהם
             עתידים לקבל לפי הערכת שמאי הפרויקט
@@ -3362,19 +3363,19 @@
         </div>
         <!-- Col -->
         <div class="col">
-          <p class="f-m f-d-3 f-m-2 bold"> במקרה של פינוי בינוי בעלי הדירות יקבלו
+          <p class="f-m f-d-3 f-m-2 bold" data-aos="fade-up" data-aos-anchor="#information" data-aos-delay="100"> במקרה של פינוי בינוי בעלי הדירות יקבלו
             את דמי השכירות לכל תקופת הבניה בשיקים
             .מראש</p>
-          <p class="f-m f-d-3 f-m-2 bold"> החברה שואפת ותפעל לכך שהפרויקט
+          <p class="f-m f-d-3 f-m-2 bold" data-aos="fade-up" data-aos-anchor="#information" data-aos-delay="200"> החברה שואפת ותפעל לכך שהפרויקט
             , ייעשה בדרך של בינוי – פינוי – בינוי
             שמשמעותה מינימום של' פינוי דיירים
             .מדירותיהם לפני ביצוע שלב א</p>
         </div>
         <!-- Col -->
         <div class="col">
-          <p class="f-m f-d-3 f-m-2 bold">ביטוחים- היזם מתחייב לערוך ביטוח
+          <p class="f-m f-d-3 f-m-2 bold" data-aos="fade-up" data-aos-anchor="#information" data-aos-delay="300">ביטוחים- היזם מתחייב לערוך ביטוח
             .עבודות קבלניות כנדרש בחוק</p>
-          <p class="f-m f-d-3 f-m-2 bold">- עו"ד ומפקח מטעם בעלי הדירות
+          <p class="f-m f-d-3 f-m-2 bold" data-aos="fade-up" data-aos-anchor="#information" data-aos-delay="400">- עו"ד ומפקח מטעם בעלי הדירות
             .ימומן ע"י החברה היזמית</p>
         </div>
       </div>
@@ -3382,7 +3383,7 @@
   </div>
 
   <!-- Gallery -->
-  <div class="gallery">
+  <div class="gallery" id="gallery">
     <div class="container">
       <!-- Heading -->
       <div class="heading">
@@ -3394,7 +3395,7 @@
               stroke-width="1" />
           </g>
         </svg>
-        <p class="f-d-4 f-m-4 light">גלרייה</p>
+        <p class="f-d-4 f-m-4 light" data-aos="fade-up" data-aos-anchor="#gallery">גלרייה</p>
       </div>
       <!-- Swiper -->
       <div class="swiper-container">
@@ -3431,7 +3432,7 @@
   </div>
 
   <!-- Architects -->
-  <div class="architects">
+  <div class="architects" id="architects">
     <p class="f-d-4 f-m-4 light">אדריכלים</p>
     <!-- Row -->
     <div class="row">
@@ -3458,19 +3459,19 @@
           .רשויות מקומיות רבות ברחבי הארץ</p>
       </div>
       <!-- Col -->
-      <div class="col">
+      <div class="col" data-aos="fade-right" data-aos-anchor="#architects">
         <img src="img/architects-1.jpg" alt="architects-img">
       </div>
     </div>
   </div>
 
   <!-- Company Info -->
-  <div class="company-info">
+  <div class="company-info" id="companyInfo">
     <p class="f-d-4 f-m-4 light d-mobile">רייסדור בבית שמש</p>
     <!-- Row -->
     <div class="row">
       <!-- Col -->
-      <div class="col">
+      <div class="col" data-aos="fade-left" data-aos-anchor="#companyInfo">
         <img src="img/company-info-1.jpg" alt="company-info-img">
       </div>
       <!-- Col -->
@@ -3595,13 +3596,13 @@
   </div>
 
   <!-- Projects -->
-  <div class="projects">
+  <div class="projects" id="projects">
     <!-- Top -->
     <div class="projects-top">
       <div class="container">
         <!-- Logo -->
         <div class="projects-logo">
-          <img src="img/logo-part.png" alt="logo-img">
+          <img src="img/logo-part.png" alt="logo-img" data-aos="flip-up" data-aos-anchor="#projects">
         </div>
         <h2 class="f-d-8 f-m-6 regular">להתקדם עם רייסדור</h2>
         <h3 class="f-d-6 f-m-4 light text-green">!חברה מובילה בזכות העוצמה, ההצלחה והניסיון</h3>
@@ -3611,22 +3612,22 @@
             <!-- Slide -->
             <div class="swiper-slide">
               <img src="img/projects-1.jpg" alt="project-img">
-              <p class="f-m f-d-1 f-m-1">רייסדור ראש העין</p>
+              <p class="f-m f-d-1 f-m-1" data-aos="fade-up" data-aos-anchor="#projects">רייסדור ראש העין</p>
             </div>
             <!-- Slide -->
             <div class="swiper-slide">
               <img src="img/projects-2.jpg" alt="project-img">
-              <p class="f-m f-d-1 f-m-1">רייסדור ירושלים</p>
+              <p class="f-m f-d-1 f-m-1" data-aos="fade-up" data-aos-anchor="#projects" data-aos-delay="100">רייסדור ירושלים</p>
             </div>
             <!-- Slide -->
             <div class="swiper-slide">
               <img src="img/projects-3.jpg" alt="project-img">
-              <p class="f-m f-d-1 f-m-1">רייסדור גבעת שמואל</p>
+              <p class="f-m f-d-1 f-m-1" data-aos="fade-up" data-aos-anchor="#projects" data-aos-delay="200">רייסדור גבעת שמואל</p>
             </div>
             <!-- Slide -->
             <div class="swiper-slide">
               <img src="img/projects-4.jpg" alt="project-img">
-              <p class="f-m f-d-1 f-m-1">מגדלי רייסדור 2 בני ברק</p>
+              <p class="f-m f-d-1 f-m-1" data-aos="fade-up" data-aos-anchor="#projects" data-aos-delay="300">מגדלי רייסדור 2 בני ברק</p>
             </div>
           </div>
         </div>
@@ -3684,7 +3685,7 @@
   </div>
 
   <!-- Blog Posts -->
-  <div class="blog-posts">
+  <div class="blog-posts" id="blogPosts">
     <div class="container">
       <!-- Heading -->
       <div class="heading">
@@ -3702,7 +3703,7 @@
       <!-- Row -->
       <div class="row">
         <!-- Col -->
-        <div class="col">
+        <div class="col" data-aos="fade-left" data-aos-anchor="#blogPosts">
           <picture>
             <source media="(min-width:1024px)" srcset="img/blog-posts-1.jpg">
             <img src="img/blog-posts-1-mobile.jpg" alt="blog-posts-img">
@@ -4102,7 +4103,9 @@
   <!-- Script (Vendor) -->
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/gsap.min.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
   <script src="js/image-compare-viewer.min.js"></script>
+  <script src="js/aos.js"></script>
 
   <!-- Script -->
   <script src="js/app.js"></script>

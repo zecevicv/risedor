@@ -2114,6 +2114,7 @@ h6 {
 .architects {
   padding: 3.65vw 0 12vw 0;
   position: relative;
+  overflow: hidden;
 }
 
 .architects::after {
@@ -2235,6 +2236,7 @@ h6 {
 ================================================== */
 .company-info {
   padding: 7.5vw 0 10.4vw 0;
+  overflow: hidden;
 }
 
 .company-info .row {
@@ -2543,6 +2545,7 @@ h6 {
 ================================================== */
 .blog-posts {
   margin-bottom: 3.4vw;
+  overflow: hidden;
 }
 
 .blog-posts .container {

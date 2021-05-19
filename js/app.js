@@ -60,6 +60,82 @@ const options = {
 
 const viewer = new ImageCompare(imageCompareEl, options).mount();
 
+/* #Image Gallery
+  ======================================================= */
+gsap.to(".img-gallery .img-1", {
+  yPercent: -50,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".img-gallery ",
+    scrub: true
+  },
+});
+
+gsap.to(".img-gallery .img-2", {
+  yPercent: 50,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".img-gallery ",
+    scrub: true
+  },
+});
+
+gsap.to(".img-gallery .img-4", {
+  yPercent: 75,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".img-gallery ",
+    scrub: true
+  },
+});
+
+gsap.to(".img-gallery .img-5", {
+  yPercent: 50,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".img-gallery ",
+    scrub: true
+  },
+});
+
+/* #Management
+  ======================================================= */
+gsap.to(".management .img-1", {
+  yPercent: -50,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".management ",
+    scrub: true
+  },
+});
+
+gsap.to(".management .img-2", {
+  yPercent: 50,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".management ",
+    scrub: true
+  },
+});
+
+gsap.to(".management .img-3", {
+  yPercent: -50,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".management ",
+    scrub: true
+  },
+});
+
+gsap.to(".management .img-4", {
+  yPercent: -25,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".management ",
+    scrub: true
+  },
+});
+
 /* #Technical Information Accordion
   ======================================================= */
 const accordion = document.querySelector('.accordion');
@@ -167,4 +243,13 @@ new Swiper(".documents .swiper-container", {
       slidesPerView: 6,
     }
   }
+});
+
+/* #AOS Animations
+    ======================================================= */
+AOS.init({
+  startEvent: 'load',
+  once: true,
+  duration: 800,
+  offset: 300
 });
