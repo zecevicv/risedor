@@ -507,6 +507,16 @@ h6 {
   align-items: center;
 }
 
+.header-right,
+.header-left {
+  flex: 0 0 30%;
+}
+
+.header-left {
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* Right */
 .header-right {
   display: flex;
@@ -707,6 +717,11 @@ h6 {
   .header,
   .header.header-white {
     padding: 3vw 0;
+  }
+
+  .header-right,
+  .header-left {
+    flex: 0;
   }
 
   .dropdown {
@@ -2318,7 +2333,7 @@ h6 {
   }
 
   .company-info .col:first-child {
-    max-width: 93%;
+    max-width: 95%;
   }
 
   .company-info .col:last-child {
@@ -2940,6 +2955,10 @@ h6 {
 }
 
 @media (max-width: 1023.98px) {
+  .footer {
+    margin-bottom: 13.3vw;
+  }
+
   .footer .container {
     max-width: 90%;
   }

@@ -1,0 +1,355 @@
+/* #Checkbox
+================================================== */
+.checkbox_wrap {
+  padding-right: 0;
+  padding-left: 1.35vw;
+}
+
+.checkbox_wrap .checkmark {
+  right: auto;
+  left: 0;
+}
+
+@media (max-width: 1023.98px) {
+  .checkbox_wrap {
+    padding-right: 0;
+    padding-left: 6.41vw;
+  }
+}
+
+/* #Swiper Arrows
+================================================== */
+.swiper-arrows .swiper-button-next{
+  transform: rotate(180deg);
+}
+
+.swiper-arrows .swiper-button-prev {
+  transform: rotate(0);
+}
+
+/* #Heeader
+================================================== */
+/* Left */
+.header-logo {
+  margin-right: 0;
+  margin-left: 2vw;
+}
+
+/* Menu */
+.show-menu .header-menu ul li::before {
+  margin-left: 0;
+  margin-right: 3.3vw;
+}
+
+/* Dropdown */
+.dropdown {
+  margin-right: 0;
+  margin-left: 1.5vw;
+}
+
+.dropdown-menu input {
+  padding: .55vw 0 .55vw .55vw;
+}
+
+.dropdown-close {
+  left: auto;
+  right: 0.8vw;
+}
+
+@media (max-width: 1023.98px) {
+  .dropdown {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .dropdown-close {
+    left: auto;
+    right: 5%;
+  }
+
+  .dropdown-menu input {
+    padding: 2.3vw 0 2.3vw 2.3vw;
+  }
+  
+  .show-menu .header-menu ul li::before {
+    margin-left: 0;
+    margin-right: 5vw;
+  }
+}
+
+/* #Hero
+================================================== */
+.hero .box:first-child {
+  border-left: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  right: auto;
+  left: 0;
+}
+
+.hero .box:last-child {
+  border-right: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  left: auto;
+  right: 0;
+}
+
+/* #Map
+================================================== */
+
+.icv__arrow-wrapper:first-of-type {
+  transform: translateX(-1vw) rotate(180deg) !important;
+}
+
+.icv__arrow-wrapper:last-of-type {
+  transform: translateX(1vw) rotate(180deg) !important;
+}
+
+.map .info-1 {
+  padding-left: 0;
+  padding-right: 2.6vw;
+}
+
+.map .info-2 {
+  padding-right: 0;
+  padding-left: 2.6vw;
+}
+
+.map .info-1 p:first-child::after {
+  left: auto;
+  right: 0;
+}
+
+.map .info-2 p:first-child::after {
+  right: auto;
+  left: 0;
+}
+
+.map .info-1 {
+  text-align: right;
+}
+
+@media (max-width: 1023.98px) {
+  .map .info-1 {
+    padding-left: 0;
+    padding-right: 6vw;
+    border-left: none;
+    border-right: 1px solid #70707038;
+  }
+
+  .map .info-2 {
+    padding-right: 0;
+    padding-left: 6vw;
+  }
+}
+
+/* #Stages
+================================================== */
+.stages ul li {
+  padding-left: 0;
+  padding-right: 2.35vw;
+}
+
+.stages ul li .arrow {
+  left: auto;
+  right: 2.35vw;
+  transform: rotate(180deg);
+}
+
+.stages ul li .checkmark {
+  left: auto;
+  right: 5.2vw;
+}
+
+@media (max-width: 1023.98px) {
+  .stages ul li.current {
+    padding-right: 0;
+    padding-left: 6vw;
+  }
+
+  .stages ul li .checkmark {
+    left: auto;
+    right: 23vw;
+  }
+
+  .stages ul li .arrow {
+    left: auto;
+    right: 6vw;
+  }
+}
+
+/* #Technical Information
+================================================== */
+.technical-information .container>p::after {
+  right: auto;
+  left: 0;
+}
+
+.technical-information .collapse-toggler .text svg {
+  margin-left: 0;
+  margin-right: 2.8vw;
+}
+
+.technical-information ul li::before {
+  margin-left: 0;
+  margin-right: .9vw;
+}
+
+@media (max-width: 1023.98px) {
+  .technical-information .collapse-toggler .text svg {
+    margin-left: 0;
+    margin-right: 7.33vw;
+  }
+
+  .technical-information ul li::before {
+    margin-left: 0;
+    margin-right: 2.2vw;
+  }
+}
+
+/* #Information
+================================================== */
+.information .row p::after {
+  right: auto;
+  left: 0;
+}
+
+@media (max-width: 1023.98px) {
+  .information .row p::after {
+    left: auto;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+/* #Architects
+================================================== */
+.architects {
+  direction: rtl;
+}
+
+.architects .col:first-child {
+  direction: ltr;
+}
+
+.architects>p {
+  direction: ltr;
+  margin-left: calc(45% + 13vw);
+  margin-right: 0;
+}
+
+.architects>p::after {
+  right: auto;
+  left: 0;
+}
+
+@media (max-width: 1023.98px) {
+  .architects>p:first-child {
+    margin-right: 0;
+    margin-left: 5%;
+  }
+}
+
+/* #Company Info
+================================================== */
+.company-info {
+  direction: rtl;
+}
+
+.company-info .col:last-child {
+  flex: 0 0 30%;
+  direction: ltr;
+}
+
+.company-info>p:first-child::after,
+.company-info .col>p:first-child::after {
+  right: auto;
+  left: 0;
+}
+
+.company-info ul li:not(:last-child) {
+  margin-left: 0;
+  margin-right: 3.3vw;
+}
+
+@media (max-width: 1023.98px) {
+  .company-info>p:first-child {
+    margin-right: 0;
+    margin-left: 5%;
+    direction: ltr;
+  }
+
+  .company-info .col:first-child {
+    max-width: 95%;
+  }
+
+  .company-info ul li:not(:last-child) {
+    margin-left: 0;
+    margin-right: 8vw;
+  }
+}
+
+/* #Projects
+================================================== */
+.projects-bottom h2::after {
+  right: auto;
+  left: 0;
+}
+
+/* #Blog Posts
+================================================== */
+.blog-posts .col:last-child {
+  padding-right: 0;
+  padding-left: 6.5vw;
+}
+
+.blog-posts .swiper-pagination {
+  text-align: left;
+}
+
+@media (max-width: 1023.98px) {
+  .blog-posts .col:last-child {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/* #Contact
+================================================== */
+.contact ul li:not(:last-child) {
+  margin-left: 0;
+  padding-left: 0;
+  margin-right: .65vw;
+  padding-right: .65vw;
+  border-left: 0;
+  border-right: 1px solid #707070;
+}
+
+.contact input[type="text"] {
+  padding-right: 0;
+  padding-left: 1vw;
+}
+
+.contact .form-group:first-child>*:not(:last-child) {
+  margin-left: 0;
+  margin-right: 1.3vw;
+}
+
+@media (max-width: 1023.98px) {
+  .contact ul li:not(:last-child) {
+    margin-left: 0;
+    margin-right: 3vw;
+    padding-left: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .contact .form-group:first-child>*:not(:last-child) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .contact input[type="text"] {
+    padding-right: 0;
+    padding-left: 4.5vw;
+  }
+}
