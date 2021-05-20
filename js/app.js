@@ -62,8 +62,70 @@ const viewer = new ImageCompare(imageCompareEl, options).mount();
 
 /* #Image Gallery
   ======================================================= */
-gsap.to(".img-gallery .img-1", {
-  yPercent: -50,
+if (window.innerWidth > 1024) {
+  gsap.to(".img-gallery .img-1", {
+    yPercent: -50,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".img-gallery ",
+      scrub: true
+    },
+  });
+} else {
+  gsap.to(".img-gallery .img-1", {
+    yPercent: 125,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".img-gallery ",
+      scrub: true
+    },
+  });
+}
+
+if (window.innerWidth > 1024) {
+  gsap.to(".img-gallery .img-2", {
+    yPercent: 200,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".img-gallery ",
+      scrub: true
+    },
+  });
+}
+
+if (window.innerWidth < 1024) {
+  gsap.to(".img-gallery .img-3", {
+    yPercent: -100,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".img-gallery ",
+      scrub: true
+    },
+  });
+}
+
+if (window.innerWidth > 1024) {
+  gsap.to(".img-gallery .img-4", {
+    yPercent: 150,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".img-gallery ",
+      scrub: true
+    },
+  });
+} else {
+  gsap.to(".img-gallery .img-4", {
+    yPercent: -50,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".img-gallery ",
+      scrub: true
+    },
+  });
+}
+
+gsap.to(".img-gallery .img-6", {
+  yPercent: -250,
   ease: "none",
   scrollTrigger: {
     trigger: ".img-gallery ",
@@ -71,8 +133,8 @@ gsap.to(".img-gallery .img-1", {
   },
 });
 
-gsap.to(".img-gallery .img-2", {
-  yPercent: 50,
+gsap.to(".img-gallery .img-7", {
+  yPercent: -500,
   ease: "none",
   scrollTrigger: {
     trigger: ".img-gallery ",
@@ -80,61 +142,120 @@ gsap.to(".img-gallery .img-2", {
   },
 });
 
-gsap.to(".img-gallery .img-4", {
-  yPercent: 75,
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".img-gallery ",
-    scrub: true
-  },
-});
+if (window.innerWidth > 1024) {
+  gsap.to(".img-gallery .img-8", {
+    yPercent: 150,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".img-gallery ",
+      scrub: true
+    },
+  });
+} else {
+  gsap.to(".img-gallery .img-8", {
+    yPercent: 250,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".img-gallery ",
+      scrub: true
+    },
+  });
+}
 
-gsap.to(".img-gallery .img-5", {
-  yPercent: 50,
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".img-gallery ",
-    scrub: true
-  },
-});
+if (window.innerWidth > 1024) {
+  gsap.to(".img-gallery .img-9", {
+    yPercent: -150,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".img-gallery ",
+      scrub: true
+    },
+  });
+} else {
+  gsap.to(".img-gallery .img-9", {
+    yPercent: -200,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".img-gallery ",
+      scrub: true
+    },
+  });
+}
+
+if (window.innerWidth > 1024) {
+  gsap.to(".img-gallery .img-10", {
+    yPercent: -200,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".img-gallery ",
+      scrub: true
+    },
+  });
+}
 
 /* #Management
   ======================================================= */
-gsap.to(".management .img-1", {
-  yPercent: -50,
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".management ",
-    scrub: true
-  },
-});
+if (window.innerWidth > 1024) {
+  gsap.to(".management .img-1", {
+    yPercent: -125,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".management ",
+      scrub: true
+    },
+  });
+} else {
+  gsap.to(".management .img-1", {
+    yPercent: -75,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".management ",
+      scrub: true
+    },
+  });
+}
 
-gsap.to(".management .img-2", {
-  yPercent: 50,
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".management ",
-    scrub: true
-  },
-});
+if (window.innerWidth < 1024) {
+  gsap.to(".management .img-2", {
+    yPercent: 100,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".management ",
+      scrub: true
+    },
+  });
+}
 
-gsap.to(".management .img-3", {
-  yPercent: -50,
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".management ",
-    scrub: true
-  },
-});
+if (window.innerWidth > 1024) {
+  gsap.to(".management .img-3", {
+    yPercent: 100,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".management ",
+      scrub: true
+    },
+  });
+} else {
+  gsap.to(".management .img-3", {
+    yPercent: 50,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".management ",
+      scrub: true
+    },
+  });
+}
 
-gsap.to(".management .img-4", {
-  yPercent: -25,
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".management ",
-    scrub: true
-  },
-});
+if (window.innerWidth < 1024) {
+  gsap.to(".management .img-4", {
+    yPercent: -50,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".management ",
+      scrub: true
+    },
+  });
+}
 
 /* #Technical Information Accordion
   ======================================================= */
