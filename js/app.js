@@ -40,14 +40,32 @@ dropdown.addEventListener('click', (e) => {
   }
 });
 
-/* #Hero Slider
+/* #Hero
   ======================================================= */
+// Slider
 new Swiper(".hero .swiper-container", {
   slidesPerView: 1,
   effect: 'fade',
   pagination: {
     el: ".hero .swiper-pagination",
   }
+});
+
+// Progress line animation
+gsap.from('.progress-line', { width: 0, delay: 2, duration: 2.5 })
+
+// Number animation
+const boxNumbers = document.querySelectorAll('.hero .percentage .value');
+
+boxNumbers.forEach((num) => {
+  gsap.from(num, {
+    delay: 2, 
+    duration: 2.5,
+    innerHTML: 0,
+    snap:{
+      innerHTML: 1
+    }
+  });
 });
 
 /* #Map (image compare viewer)
