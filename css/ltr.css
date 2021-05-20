@@ -47,6 +47,11 @@
   margin-left: 1.5vw;
 }
 
+.dropdown-menu {
+  right: auto;
+  left: 0;
+}
+
 .dropdown-menu input {
   padding: .55vw 0 .55vw .55vw;
 }
