@@ -1446,72 +1446,81 @@ h6 {
   transform: translateX(-50%);
 }
 
-.stages ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.stages ul li {
-  flex: 0 0 14.2%;
-  padding-left: 2.35vw;
-  padding-bottom: 3.38vw;
+.stages .swiper-slide {
   position: relative;
   line-height: 1.25;
 }
 
-.stages ul li .icon {
+.stages .swiper-slide .icon {
   margin-bottom: 1vw;
 }
 
-.stages ul li .arrow {
+.stages .swiper-slide .arrow {
   position: absolute;
   left: 2.35vw;
   top: 1vw;
 }
 
-.stages ul li .checkmark {
+.stages .swiper-slide .checkmark {
   display: none;
   position: absolute;
   left: 5.2vw;
   top: -1vw;
 }
 
-.stages ul li .icon svg {
+.stages .swiper-slide .icon svg {
   height: 3.125vw;
 }
 
-.stages ul li .arrow svg {
+.stages .swiper-slide .arrow svg {
   width: 1.25vw;
   height: 0.83vw;
 }
 
-.stages ul li .checkmark svg {
+.stages .swiper-slide .checkmark svg {
   width: 2.4vw;
   height: 2.4vw;
 }
 
-.stages ul li .icon svg,
-.stages ul li .arrow svg,
-.stages ul li .checkmark svg {
+.stages .swiper-slide .icon svg,
+.stages .swiper-slide .arrow svg,
+.stages .swiper-slide .checkmark svg {
   object-fit: contain;
 }
 
-.stages ul li .text p:first-child {
+.stages .swiper-slide .text p:first-child {
   margin-bottom: .5vw;
 }
 
-.stages ul li.off .icon,
-.stages ul li.off .text,
-.stages ul li.off .arrow {
+.stages .swiper-slide > div.off .icon,
+.stages .swiper-slide > div.off .text,
+.stages .swiper-slide > div.off .arrow {
   opacity: .2;
 }
 
-.stages ul li.off .checkmark {
+.stages .swiper-slide > div.off .checkmark {
   display: block;
 }
 
-.stages ul li:last-child .arrow {
+.stages .swiper-slide:last-child .arrow {
   display: none;
+}
+
+@media (min-width: 1024px) {
+  .stages .swiper-container {
+    overflow: visible;
+  }
+  
+  .stages .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .stages .swiper-slide {
+    flex: 0 0 14.2%;
+    padding-left: 2.35vw;
+    padding-bottom: 3.38vw;
+  }
 }
 
 @media (max-width: 1023.98px) {
@@ -1536,58 +1545,40 @@ h6 {
     width: 5.3vw;
   }
 
-  .stages ul li {
-    display: none;
-    flex: 0 0 50%;
+  .stages .swiper-slide {
     padding-left: 0;
     padding-bottom: 0;
+    padding-top: 5vw;
   }
 
-  .stages ul li.current,
-  .stages ul li.previous {
-    display: block;
-  }
-
-  .stages ul li.current {
-    padding-right: 6vw;
-  }
-
-  .stages ul li.previous .arrow {
-    opacity: 1;
-  }
-
-  .stages ul li.current .arrow {
-    opacity: .2;
-  }
-
-  .stages ul li .arrow svg {
+  .stages .swiper-slide .arrow svg {
     width: 4vw;
     height: 2.66vw;
   }
 
-  .stages ul li .icon svg {
+  .stages .swiper-slide .icon svg {
     height: 9.33vw;
   }
 
-  .stages ul li .icon {
+  .stages .swiper-slide .icon {
     margin-bottom: 2.6vw;
   }
 
-  .stages ul li .text p:first-child {
+  .stages .swiper-slide .text p:first-child {
     margin-bottom: 1vw;
   }
 
-  .stages ul li .checkmark svg {
+  .stages .swiper-slide .checkmark svg {
     width: 7.5vw;
     height: 7.5vw;
   }
 
-  .stages ul li .checkmark {
+  .stages .swiper-slide .checkmark {
     left: 23vw;
-    top: -5vw;
+    top: 0;
   }
 
-  .stages ul li .arrow {
+  .stages .swiper-slide .arrow {
     left: 6vw;
     top: 2vw;
   }

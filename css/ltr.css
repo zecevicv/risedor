@@ -149,36 +149,35 @@
 
 /* #Stages
 ================================================== */
-.stages ul li {
-  padding-left: 0;
-  padding-right: 2.35vw;
-}
 
-.stages ul li .arrow {
-  left: auto;
-  right: 2.35vw;
-  transform: rotate(180deg);
-}
-
-.stages ul li .checkmark {
-  left: auto;
-  right: 5.2vw;
+@media (min-width: 1024px) {
+  .stages .swiper-slide {
+    padding-left: 0;
+    padding-right: 2.35vw;
+  }
+  
+  .stages .swiper-slide .arrow {
+    left: auto;
+    right: 2.35vw;
+    transform: rotate(180deg);
+  }
+  
+  .stages .swiper-slide .checkmark {
+    left: auto;
+    right: 5.2vw;
+  }
 }
 
 @media (max-width: 1023.98px) {
-  .stages ul li.current {
-    padding-right: 0;
-    padding-left: 6vw;
-  }
-
-  .stages ul li .checkmark {
+  .stages .swiper-slide .checkmark {
     left: auto;
     right: 23vw;
   }
 
-  .stages ul li .arrow {
+  .stages .swiper-slide .arrow {
     left: auto;
     right: 6vw;
+    transform: rotate(180deg);
   }
 }
 

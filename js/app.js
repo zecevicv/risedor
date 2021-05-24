@@ -211,6 +211,33 @@ if (window.innerWidth > 1024) {
   });
 }
 
+/* #Stages
+  ======================================================= */
+// Find which slides should be initial (for mobiles)
+const stagesSlides = document.querySelectorAll('.stages .swiper-slide');
+let startingIndex = 0;
+
+if (window.innerWidth < 1024) {
+  stagesSlides.forEach((slide, index) => {
+    if (slide.querySelector('.previous')) {
+      startingIndex = index;
+    }
+  });
+}
+
+new Swiper(".stages .swiper-container", {
+  slidesPerView: 2,
+  initialSlide: startingIndex,
+  breakpoints: {
+    0: {
+      allowTouchMove: true
+    },
+    1024: {
+      allowTouchMove: false
+    }
+  }
+});
+
 /* #Management
   ======================================================= */
 if (window.innerWidth > 1024) {
